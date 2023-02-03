@@ -1,0 +1,16 @@
+#:kivy 1.9.0
+#:import main menu
+AsosiyYuz:
+
+<AsosiyYuz>:
+    canvas.before:
+        Rectangle:
+            size: self.size
+            source: 'image/166017.jpg'
+    main_menu: main_menu
+    MainMenu:
+        id: main_menu
+
+    Label:
+        text: "SCORE: " + root.score_text
+        pos_hint: {"center_x": 0.05, "center_y": 0.93}
